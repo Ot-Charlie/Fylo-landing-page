@@ -27,7 +27,7 @@ The designs were created to the following widths:
 ### Neutral
 
 - White: hsl(0, 0%, 100%)
-
+- Grey : hsla(210, 10%, 69%, 1.00)
 ## Typography
 
 ### Body Copy

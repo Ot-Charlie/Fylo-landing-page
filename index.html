@@ -25,7 +25,7 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="first-section">
       <img src="./images/illustration-intro.png" alt="an image illustrating files in one location">
       <h1>All your files in one secure location, accessible anywhere.</h1>
       <p> Fylo stores all your most important files in one secure location. Access them wherever
@@ -33,13 +33,13 @@
       </p>
       <a href="#">Get Started</a>
     </section>
-    <section>
+    <section class="second-section">
       <article>
         <img src="./images/icon-access-anywhere.svg" alt="">
         <h2> Access your files, anywhere</h2>
-        <p> The ability to use a smartphone, tablet, or computer to access your account means your
+        <p class="access-paragraph"> The ability to use a smartphone, tablet, or computer to access your account means your
           files follow you everywhere.</p>
-        </artilce>
+        </article>
         <article>
           <img src="./images/icon-security.svg" alt="">
           <h2>Security you can trust</h2>
@@ -59,28 +59,28 @@
             file types to be securely stored and shared.</p>
         </article>
     </section>
-    <section>
+    <section class="third-section">
       <div>
         <img src="./images/illustration-stay-productive.png" alt="illustrative picture">
       </div>
-      <div>
+      <div class="section-three-writeup">
         <h3>Stay productive, wherever you are</h3>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
           storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
           attachments required.</p>
-        <a href="#">See how Fylo works<span><img src="./images/icon-arrow.svg" alt=""></span></a>
+        <a href="#">See how Fylo works<span class="right-arrow"><img src="./images/icon-arrow.svg" alt=""></span></a>
       </div>
     </section>
-    <section>
-      <img src="./images/bg-quotes.png" alt="picture">
+    <section class="fourth-section">
+      <img src="./images/bg-quotes.png" alt="picture" class="bg-quote">
       <article>
         <blockquote>
           <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</p>
         </blockquote>
-        <div>
-          <img src="./images/profile-1.jpg" alt="aSatish Patel's image">
+        <div class="author-card">
+          <img src="./images/profile-1.jpg" alt="aSatish Patel's image" class="author-img">
           <div>
             <cite>Satish Patel</cite>
             <p>Founder & CEO, Huddle</p>
@@ -92,8 +92,8 @@
           <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</p>
         </blockquote>
-        <div>
-          <img src="./images/profile-2.jpg" alt="Bruce McKenzie's photo">
+        <div class="author-card">
+          <img src="./images/profile-2.jpg" alt="Bruce McKenzie's photo" class="author-img">
           <div>
             <cite>Bruce McKenzie
             </cite>
@@ -106,8 +106,8 @@
           <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
             become a well-oiled collaboration machine.</p>
         </blockquote>
-        <div>
-          <img src="./images/profile-3.jpg" alt="Iva Boyd's image">
+        <div class="author-card">
+          <img src="./images/profile-3.jpg" alt="Iva Boyd's image" class="author-img">
           <div>
             <cite> Iva Boyd
             </cite>
@@ -116,21 +116,23 @@
         </div>
       </article>
     </section>
-    <section class="newsletter-signup">
+    <section class="fifth-section">
       <h4>Get early access today</h4>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.
       </p>
       <form>
-        <input type="email" placeholder="email@example.com">
+        <input type="email" placeholder="email@example.com" class="newsletter-signup">
         <button type="submit">Get Started For Free</button>
       </form>
     </section>
   </main>
   <footer>
-    <div>
+    <div class="footer-logo-box">
       <img src="./images/logo.svg" alt="company logo">
-      <div>
+    </div>
+    <section>
+      <div class="location-box">
         <img src="./images/icon-location.svg" alt="location icon">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -138,34 +140,39 @@
         </p>
       </div>
     </div>
-    <div>
+    <div class="contact-box-container">
+      <div class="contact-box">
       <img src="./images/icon-phone.svg" alt="phone icon">
       <p>+1-543-123-4567</p>
+      </div>
+      <div class="contact-box">
       <img src="./images/icon-email.svg" alt="email icon">
       <p> example@fylo.com</p>
+      </div>
     </div>
-    <div>
+    <div class="about-us-box">
       <p>About Us </p>
       <p> Jobs</p>
       <p>Press</p>
       <p>Blog</p>
     </div>
-    <div>
+    <div class="ctp-box">
       <p> Contact Us</p>
       <p>Terms</p>
       <p>Privacy</p>
     </div>
-    <div>
-      <img src="./images/facebook-logo.svg" alt="instagram-logo">
-      <img src="./images/twitter-logo.svg" alt="twitter logo">
-      <img src="./images/instagram-logo.svg" alt="instagram logo">
+    <div class="socials-icons">
+      <a href="#"><img src="./images/facebook-logo.svg" alt="instagram-logo"></a>
+      <a href="#"><img src="./images/twitter-logo.svg" alt="twitter logo"></a>
+      <a href="#"><img src="./images/instagram-logo.svg" alt="instagram logo"></a>
     </div>
-    <p class="attribution">
+    </section>
+    </footer>
+     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
         Mentor</a>.
-      Coded by <a href="https://www.onwuli-charles.netlify.app">Your Name Here</a>.
+      Coded by <a href="https://onwuli-charles.netlify.app" target="_blank" rel="noopener">Onwuli Charles</a>.
     </p>
-  </footer>
   <script src="script.js"></script>
 </body>
 

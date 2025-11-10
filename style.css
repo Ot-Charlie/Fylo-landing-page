@@ -7,18 +7,291 @@
 body{
   background-color: hsl(217, 28%, 15%);
 }
+header{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway" , sans-serif;
+  font-weight: 400;
+}
+header ul{
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+  list-style-type: none;
+}
+header a{
+  text-decoration: none;
+  color: hsla(210, 10%, 69%, 1.00);
+}
+header a:hover{
+  color:hsl(0, 0%, 100%);
+}
 main {
   background-image: 
     url('./images/bg-curvy-desktop.svg'),
     linear-gradient(to bottom, 
-      transparent 550px,           /* transparent at top till 550px*/
-      transparent 500px,        /* transparent until 500px */
+      transparent 700px,           /* transparent at top till 550px*/
+      transparent 900px,        /* transparent until 500px */
       hsl(218, 28%, 13%) 400px  /* color starts at 400px */
     );
-  
   background-size: 100% auto, 100% 100%;
-  background-position: center 10%, center 10%;
+  background-position: center 25%, center 10%;
   background-repeat: no-repeat;
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.first-section{
+  text-align: center;
+}
+h1{
+  max-width: 600px;
+  font-family: "Raleway" , sans-serif;
+  color:hsl(0, 0%, 100%);
+  margin:auto;
+}
+.first-section p{
+    color: hsla(210, 10%, 69%, 1.00);
+    font-family: "Open sans" , sans-serif;
+    max-width: 500px;
+    margin: 10px auto;
+font-weight: 400;
+}
+.first-section a{
+  font-family: "Raleway" , sans-serif;
+  color:hsl(0, 0%, 100%);
+  text-decoration: none;
+  background-color: hsl(198, 60%, 50%);
+  padding: 12px 70px;
+  border-radius: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+}
+.first-section a:hover{
+  background-color: hsl(176, 68%, 64%);
+}
+.second-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
+  width: 80%;
+  }
+  .second-section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+   margin-top: 50px;
+}
+
+h2{
+ 
+   font-family: "Raleway" , sans-serif;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin: 10px 0;
+}
+.second-section p{
+  color:hsla(210, 10%, 69%, 1.00);
+  max-width: 440px;
+  text-align: center;
+   font-family: "Open sans" , sans-serif;
+ 
+}
+.second-section .access-paragraph{
+  max-width: 390px;
+  text-align: center;
+}
+.third-section{
+  display: flex;
+  margin: 20px;
+  gap:30px;
+}
+.section-three-writeup{
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+h3{
+ font-family: "Raleway" , sans-serif;
+  color: hsl(0, 0%, 100%);
+  max-width: 200px;
+  letter-spacing: 2px;
+}
+.third-section p{
+  margin: 20px 0;
+   color:hsla(210, 10%, 69%, 1.00);
+  max-width: 550px;
+   font-family: "Open sans" , sans-serif;
+}
+.third-section a{
+  text-decoration: none;
+  font-family: "Open sans" , sans-serif;
+  color: hsl(198, 60%, 50%);
+  border-bottom: 2px solid hsl(198, 60%, 50%);
+ padding-bottom: 5px;
+max-width: 167px;
+}
+.right-arrow img {
+  vertical-align: middle; /* aligns with middle of text */
+  margin-left:5px;
+}
+.third-section a:hover{
+color: hsl(0, 0%, 100%);
+border-bottom: 2px solid hsl(0, 0%, 100%);
+filter: brightness(0) invert(1);
+}
+.fourth-section{
+  margin: 50px 55px 0;
+
+  display: flex;
+  gap:20px;
+  position: relative; /* Creates positioning context */
+}
+.bg-quote {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 0; /* Puts it behind the cards */
+  /* or z-index: 0 with cards having z-index: 1 */
+  width: 35px;
+}.fourth-section article{
+  background-color: hsl(219, 30%, 18%);
+  padding: 10px 20px;
+  margin-top: 25px;
+  z-index: 1;
+  border-radius: 5px;
+ 
+}
+.fourth-section blockquote p{
+color:hsla(210, 10%, 69%, 1.00);
+font-family: "Open sans" , sans-serif;
+width: 330px;
+}
+.author-card{
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+  align-items:flex-end;
+}
+.author-img{
+border-radius: 50%;
+width: 50px;
+}
+cite{
+  font-family: "Raleway" , sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.author-card p{
+  color:hsla(210, 10%, 69%, 1.00);
+font-family: "Open sans" , sans-serif;
+}
+.fifth-section{
+  padding: 20px 40px 30px;
+  background-color: hsl(217, 28%, 15%);
+  margin:100px auto -50px;
+  width:800px;
+  position: relative;
+  z-index: 2;
+ box-shadow:20px 10px 16px rgba(0, 0, 0, 0.3);
+ border-radius: 5px;
+}
+h4{
+  color: hsl(0, 0%, 100%);
+   font-family: "Raleway" , sans-serif;
+   text-align: center;
+   border-radius: 5px;
+   font-size: 1.3rem;
+}
+.fifth-section p{
+  color:hsla(210, 10%, 69%, 1.00);
+font-family: "Open sans" , sans-serif;
+text-align: center;
+margin: 10px auto;
+font-size: 0.85rem;
+max-width: 660px;
+}
+form{
+  display:flex;
+  gap: 40px;
+  align-items:baseline;
+}
+.newsletter-signup{
+  width:60%;
+padding: 10px 30px;
+border-radius: 25px;
+border: none;
+margin-top: 10px;
+margin-left: 30px;
+
+}
+.fifth-section button{
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(198, 60%, 50%);
+  color:hsl(0, 0%, 100%);
+  font-family: "Open sans" , sans-serif;
+  cursor: pointer;
+}
+input::placeholder {
+  color: hsla(210, 10%, 69%, 1.00);
+  opacity: 0.8;
+}
+.fifth-section button:hover{
+  background-color: hsl(176, 68%, 64%);
+}
+footer{
+  padding-top: 100px;
+  background-color: hsl(216, 53%, 9%);
+  z-index: 1;
+  color:hsl(0, 0%, 100%);
+   font-family: "Open sans" , sans-serif;
+  }
+  .footer-logo-box{
+    margin-left: 50px;
+  }
+footer section{
+   display: flex;
+   justify-content: space-around;
+}
+.location-box{
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+.location-box p{
+  max-width: 350px;
+}
+.contact-box-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-box{
+  display: flex;
+  align-items:baseline;
+  gap: 10px;
+}
+.about-us-box{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.ctp-box{
+ display: flex;
+flex-direction: column;
+gap: 10px; 
+}
+.socials-icons{
+  display: flex;
+  gap:10px;
+}
+.socials-icons img{
+  width: 30px;
+cursor: pointer;
+}
+.attribution { 
+  font-size: 11px; text-align: center; color: hsla(210, 10%, 69%, 1.00);;}
+ .attribution a { color: white; }
