@@ -31,8 +31,7 @@ main {
     linear-gradient(
       to bottom,
       transparent 850px,
-      /* transparent at top till 860px*/ 
-      hsl(218, 28%, 13%) 850px
+      /* transparent at top till 860px*/ hsl(218, 28%, 13%) 850px
         /* color starts at 860px */
     );
   background-size: 100% auto; /*full width and auto height scales proportionally*/
@@ -81,7 +80,11 @@ h1 {
   align-items: center; /* centers everything horizontally */
   margin-top: 50px;
 }
-
+.second-section img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* keeps aspect ratio, fits inside */
+}
 h2 {
   font-family: "Raleway", sans-serif;
   color: hsl(0, 0%, 100%);
@@ -138,9 +141,9 @@ h3 {
   filter: brightness(0) invert(1);
 }
 .fourth-section {
-  margin: 50px 55px 0;
-
+  margin: 55px;
   display: flex;
+  justify-content: space-around;
   gap: 20px;
   position: relative; /* Creates positioning context */
 }
@@ -295,4 +298,103 @@ footer section {
 }
 .attribution a {
   color: white;
+}
+@media (max-width: 768px) {
+  main {
+    background-image: url("./images/bg-curvy-desktop.svg"),
+      linear-gradient(
+        to bottom,
+        transparent 700px,
+        /* transparent at top till 860px*/ hsl(218, 28%, 13%) 700px
+          /* color starts at 850px */
+      );
+    background-size: 100% auto; /*full width and auto height scales proportionally*/
+    background-position: center 25%; /* horizontally centered and 25% from the top*/
+    background-repeat: no-repeat;
+  }
+  .second-section {
+    width: 90%;
+    gap: 20px;
+  }
+  .second-section img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* keeps aspect ratio, fits inside */
+  }
+  .productive-img {
+    width: 400px;
+    height: auto;
+  }
+  .section-three-writeup p {
+    font-size: 0.85rem;
+    max-width: 400px;
+  }
+  .third-section p {
+    margin: 10px 0;
+  }
+  .third-section a {
+    font-size: 0.75rem;
+    max-width: 131px;
+  }
+  .fourth-section {
+    margin: 10px;
+  }
+  .fourth-section blockquote p {
+    font-size: 0.7rem;
+    max-width: 200px;
+  }
+  .fifth-section {
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  form {
+    width: 100%;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  .newsletter-signup {
+    width: 70%;
+  }
+  .fifth-section button {
+    width: 168px;
+    font-size: 0.65rem;
+    margin-left: auto;
+  }
+
+  .fourth-section {
+    gap: 10px;
+  }
+  .fourth-section article {
+    padding: 10px 20px;
+  }
+  .author-img {
+    border-radius: 50%;
+    width: 40px;
+  }
+  cite {
+    font-size: 0.75rem;
+  }
+  .author-card p {
+    font-size: 0.75rem;
+  }
+  footer {
+    font-size: 0.75rem;
+  }
+  .footer-logo-box {
+    margin-left: 5px;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+  .location-box {
+    gap: 10px;
+  }
+  .location-box p {
+    max-width: 250px;
+  }
+  .socials-icons img {
+    width: 20px;
+    cursor: pointer;
+  }
 }
