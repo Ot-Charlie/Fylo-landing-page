@@ -77,7 +77,7 @@ I want to keep getting better at building websites. In particular I want to work
 
 ## Author
 
-- Website - [Onwuli ](https://onwuli-charles-netlify.app)
+- Website - [Onwuli ](https://onwuli-charles.netlify.app)
 - Frontend Mentor - [Ot.Charlie](https://www.frontendmentor.io/profile/ot.charlie)
 - Twitter - [Kingcharlie02](https://www.twitter.com/kingcharlie01)
 
