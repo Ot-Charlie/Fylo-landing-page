@@ -217,13 +217,28 @@ form {
   gap: 40px;
   align-items: baseline;
 }
-.newsletter-signup {
+.newsletter-signup-container{
   width: 60%;
+}
+.newsletter-signup {
+  width: 100%;
   padding: 10px 30px;
   border-radius: 25px;
   border: none;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 30px;
+}
+.fifth-section span {
+  display: none;
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-left: 40px;
+  padding-left: 20px;
+  font-family: "Open sans", sans-serif;
+}
+#error-message.active {
+    display:block;
 }
 .fifth-section button {
   padding: 10px 30px;
@@ -286,6 +301,7 @@ footer section {
 .socials-icons {
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .socials-icons img {
   width: 30px;
@@ -350,16 +366,21 @@ footer section {
   }
   form {
     width: 100%;
-    gap: 10px;
-    justify-content: flex-end;
+    gap: 50px;
+    
   }
   .newsletter-signup {
-    width: 70%;
+    width: 100%;
   }
+  .fifth-section span
+ {
+  font-size: 0.7rem;
+ }
+
   .fifth-section button {
     width: 168px;
     font-size: 0.65rem;
-    margin-left: auto;
+    
   }
 
   .fourth-section {
@@ -397,4 +418,161 @@ footer section {
     width: 20px;
     cursor: pointer;
   }
+}
+@media (max-width: 426px) {
+   main {
+    background-image: url("./images/bg-curvy-desktop.svg"),
+      linear-gradient(
+        to bottom,
+        transparent 370px,
+        /* transparent at top till 370px*/ hsl(218, 28%, 13%) 370px
+          /* color starts at 370px */
+      );
+    background-size: 100% auto; /*full width and auto height scales proportionally*/
+    background-position: center 9%; /* horizontally centered and 9% from the top*/
+    background-repeat: no-repeat;
+  }
+  header{
+    gap: 40px;
+    font-size: 0.7rem;
+  }
+header img{
+  width: 80px;
+}
+header ul {
+    white-space: nowrap;
+    gap: 30px;
+    
+}
+.first-section img{
+  width:80%;
+}
+  h1{
+    font-size: 1.3rem;
+    max-width: 280px;
+    margin-top: 20px;
+  }
+.first-section p {
+  max-width: 300px;
+  font-size: 0.9rem;
+}
+.second-section {
+  grid-template-columns: 1fr;
+  margin-bottom: 50px;
+}
+.second-section .access-paragraph{
+    max-width:80%;
+}
+.second-section p{
+max-width: 370px;
+}
+.second-section article {
+    margin-top: 30px;
+}
+.third-section {
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+}
+    .productive-img {
+        width: 80%;
+        height: auto;
+        
+    }
+  .productive-img-container{
+    text-align: center;
+  }
+  h3{
+    max-width: 370px;
+  }
+  .third-section p{
+  max-width: 370px;
+  font-size: 1rem;
+  }
+      .third-section a {
+        font-size: 0.95rem;
+        max-width: 160px;
+    }
+    .fourth-section{
+      flex-direction: column;
+    
+    }
+    .bg-quote {
+   left: 9%; 
+}
+    .fourth-section article {
+      width: 85%;
+     margin: 25px auto;
+   padding: 10px 10px;
+    }
+        .fourth-section blockquote p {
+        font-size: 0.9rem;
+       min-width: 100%;
+    }
+    .fifth-section{
+      width: 90%;
+      margin-top: 50px;
+    }
+    .fifth-section p {
+      max-width: 330px;
+      font-size: 1rem;
+    }
+    form {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .newsletter-signup-container {
+      width: 100%;
+    }
+    .newsletter-signup {
+      width: 85%;
+      margin: 10px auto;
+    }
+        .fifth-section span {
+          margin-left: 10px;
+        font-size: 0.7rem;
+    }
+    .button-container{
+      width: 100%;
+    }
+        .fifth-section button {
+          width: 85%;
+          margin: 0 auto;
+        }
+        footer section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+}
+    .footer-logo {
+      width: 150px;
+      margin-left: 10px;
+    }
+.location-box {
+
+  margin-top: 10px;
+  gap: 20px;
+
+}
+.location-box p {
+font-size: 0.9rem;
+max-width: 240px;
+
+}
+.contact-box {
+    font-size: 0.9rem;
+    gap: 20px;
+}
+.about-us-box, .ctp-box {
+  margin-top: 20px;
+    font-size: 0.9rem;
+}
+.socials-icons {
+    justify-content: center;
+    gap: 10px;
+}
+    .socials-icons img {
+        width: 25px;
+    }
 }

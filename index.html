@@ -61,7 +61,7 @@
       </article>
     </section>
     <section class="third-section">
-      <div>
+      <div class="productive-img-container">
         <img src="./images/illustration-stay-productive.png" alt="illustrative picture" class="productive-img">
       </div>
       <div class="section-three-writeup">
@@ -122,9 +122,14 @@
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.
       </p>
-      <form>
-        <input type="email" placeholder="email@example.com" class="newsletter-signup">
+      <form id="form">
+        <div class="newsletter-signup-container">
+        <input type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.com" class="newsletter-signup" id="email">
+      <span id="error-message">Please enter a valid email address</span>
+      </div>
+      <div class="button-container">
         <button type="submit">Get Started For Free</button>
+      </div>
       </form>
     </section>
   </main>
